@@ -13,9 +13,8 @@ html {
 }
 body {
   background-image: url(../Images/TronBG.jpg);
-  background-color: beige;
-  background-size:contain;
-  background-position: center;
+  background-color: beige;  
+  
 }
 
 #mainTitle h1 {
