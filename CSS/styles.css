@@ -8,6 +8,9 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-image: url(../Images/TronBG.jpg);
   background-color: beige;
@@ -18,7 +21,7 @@ body {
   font-weight: bold;
   color: chartreuse;
   font-size: 60px;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .text1 {
@@ -43,9 +46,6 @@ body {
 .btn3 {
   margin-left: 70px;
 }
-
-
-
 
 .BG2{
   background-image: url(../Images/TronBG.jpg);
@@ -74,4 +74,37 @@ body {
 
 .body1{  
   background-image: url(../Images/TronBG.jpg);
+}
+
+
+
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+  font-family: 'Tron';
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+.textFormat{
+  font-family: 'Tron';
+  font-size: 50px;
 }

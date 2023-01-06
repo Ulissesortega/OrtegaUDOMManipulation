@@ -11,7 +11,7 @@ let btnOne = document.getElementById("btnOne");
 let btnTwo = document.getElementById("btnTwo");
 let btnThree = document.getElementById("btnThree");
 let btnFour = document.getElementById("btnFour");
-
+let btnFive = document.getElementById("btnFive");
 var audio = document.getElementById('audio');
 var playPauseBTN = document.getElementById('playPauseBTN');
 var count = 0;
@@ -43,21 +43,25 @@ btn3.addEventListener('click', () => {
 })
 
 
-btnOne.addEventListener("click", function () {
+btnOne.addEventListener("click",  () => {
   btnOne.innerText = "I have now been changed";
 })
 
-btnTwo.addEventListener("click", function () {
+btnTwo.addEventListener("click", () => {
   btnTwo.innerText = "This is change with a class";
   btnTwo.className = "fantasyChange"
 })
 
-btnThree.addEventListener("mouseover", function () {
+btnThree.addEventListener("mouseover", () => {
   btnThree.className = "change2"
 })
 
-btnFour.addEventListener("click", function () {
+btnFour.addEventListener("click", () => {
   btnFour.innerText = "Tron Legacy \n https://ww7.0123movie.net/movie/tron-legacy-2556.html \n Click the play button once \n close the window that will open \n click play again :)";
+})
+
+btnFive.addEventListener("click", () => {
+  title1.innerText = "Tron Legacy";
 })
 
 
@@ -80,4 +84,13 @@ function stop() {
   playPauseBTN.innerHTML = "Play ►";
 }
 
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 1) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
