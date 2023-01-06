@@ -12,6 +12,10 @@ let btnTwo = document.getElementById("btnTwo");
 let btnThree = document.getElementById("btnThree");
 let btnFour = document.getElementById("btnFour");
 
+var audio = document.getElementById('audio');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var count = 0;
+
 function myAlert(){
 alert("Welcome to JS Object Dom Manipulation");
 let userName = prompt("Please Enter your name");
@@ -56,3 +60,25 @@ btnFour.addEventListener("mouseover", function(){
   bodybg.className = "body1" 
 
 })
+
+
+function playPause(){
+	if(count == 0){
+		count = 1;
+		audio.play();
+		playPauseBTN.innerHTML = "Pause ⏸";
+	}else{
+		count = 0;
+		audio.pause();
+		playPauseBTN.innerHTML = "Play ►";
+	}
+
+}
+
+function stop(){
+	playPause()
+	audio.pause();
+	audio.currentTime = 0;
+	playPauseBTN.innerHTML = "Play ►";
+}
+
