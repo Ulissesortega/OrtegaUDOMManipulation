@@ -12,8 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(../Images/TronBG.jpg);
-  background-color: beige;    
+  background-image: url(../Images/TronBG.jpg);  
   background-repeat: no-repeat;
 }
 
@@ -50,7 +49,8 @@ body {
 
 .BG2{
   background-image: url(../Images/TronBG.jpg);
-  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 .fantasyChange{
