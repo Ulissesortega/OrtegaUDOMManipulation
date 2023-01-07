@@ -13,7 +13,8 @@ html {
 }
 body {
   background-image: url(../Images/TronBG.jpg);  
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  
 }
 
 #mainTitle h1 {
